@@ -5,13 +5,14 @@
   box-sizing: border-box;
   font-family: "Work Sans", serif;
 }
-html img {
+html,
+body img {
   max-width: 100%;
   height: auto;
 }
 #hero {
   width: 100%;
-  height: 919px;
+  height: 735px;
   background: linear-gradient(
       0deg,
       rgb(16, 16, 16) -19.5%,
@@ -57,15 +58,12 @@ html img {
   text-align: center;
   opacity: 0.7;
 }
-#hero .hero_content button {
-  width: 282px;
-  height: 65px;
+.btn {
+  padding: 16px 25px;
   margin: 15px 0;
   border-radius: 8px;
   background: rgb(82, 195, 3);
   border: none;
-}
-#hero .hero_content button > a {
   color: rgb(255, 255, 255);
   font-family: Work Sans;
   font-size: 16px;
@@ -73,18 +71,18 @@ html img {
   line-height: 23px;
   letter-spacing: 0%;
   text-align: center;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 /* About Section */
 #about {
   width: 100%;
-  height: auto;
+  height: 536px;
   display: flex;
 }
 #about .about_img {
   width: 50%;
-  height: auto;
+  height: 100%;
 }
 #about .about_content {
   width: 50%;
@@ -98,9 +96,9 @@ html img {
   width: 80%;
   margin: 0 auto;
   color: rgb(16, 16, 16);
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 51px;
   letter-spacing: 0%;
   text-align: center;
 }
@@ -113,12 +111,193 @@ html img {
   letter-spacing: 0%;
   text-align: left;
 }
+.about_social {
+  padding: 30px 10px 30px 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+  border-top: 1px solid rgba(16, 16, 16, 0.2);
+}
 .about_social .title {
-    color: rgb(16, 16, 16);
-font-family: Work Sans;
-font-size: 20px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: center;
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.social_icon i {
+  font-size: 32px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social_icon i:first-child {
+  color: #1877f2;
+}
+.social_icon i:nth-child(2) {
+  color: rgb(0, 0, 0);
+}
+.social_icon i:nth-child(3) {
+  color: radial-gradient(
+    103% 103% at 61% 105%,
+    rgba(140, 58, 170, 0) 64%,
+    rgb(140, 58, 170) 100%
+  );
+}
+.social_icon i:nth-child(4) {
+  color: rgb(225, 49, 56);
+}
+
+/* Card Section */
+#card {
+  width: 100%;
+  height: auto;
+}
+#card .container {
+  width: 1056px;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#card .container .subtitle {
+  color: rgb(16, 16, 16);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.6;
+}
+#card .container .title {
+  color: rgb(16, 16, 16);
+  width: 552px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+#card .container .card_box_container {
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+#card .container .card_box_container .card_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 340px;
+}
+#card .container .card_box_container .card_box .card_img img {
+  width: 100%;
+}
+#card .container .card_box_container .card_box .subtitle {
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: rgba(82, 195, 3, 0.15);
+  color: rgb(16, 16, 16);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+#card .container .card_box_container .card_box .title {
+  color: rgb(16, 16, 16);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+#card .container .card_box_container .card_box .description {
+  opacity: 0.7;
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+#card .container .btn {
+  margin-top: 30px;
+}
+
+/* Footer Section */
+footer {
+  width: 100%;
+  height: 537px;
+  background: linear-gradient(rgba(255, 255, 255, 0.881),rgba(255, 255, 255, 0.918)),url(../assets/social-bg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+footer h1 {
+  width: 45%;
+  margin: 0 auto;
+  color: rgb(16, 16, 16);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+footer p {
+  opacity: 0.6;
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.about_social {
+  padding: 30px 10px 30px 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+  border-top: 1px solid rgba(16, 16, 16, 0.2);
+}
+.about_social .title {
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.social_icon i {
+  font-size: 32px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social_icon i:first-child {
+  color: #1877f2;
+}
+.social_icon i:nth-child(2) {
+  color: rgb(0, 0, 0);
+}
+.social_icon i:nth-child(3) {
+  color: radial-gradient(
+    103% 103% at 61% 105%,
+    rgba(140, 58, 170, 0) 64%,
+    rgb(140, 58, 170) 100%
+  );
+}
+.social_icon i:nth-child(4) {
+  color: rgb(225, 49, 56);
 }
